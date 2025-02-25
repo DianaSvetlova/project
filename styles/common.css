@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(239, 157, 239);
+
+}
+
+.wrapper {
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: rgb(208, 248, 208);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+        
+}
+
+.logo {
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav>div {
+    margin: 10px;
+}
+
+main {
+    /* background-color: rgb(208, 248, 208); */
+    margin: 10px 100px;
+}
+
+footer {
+    background-color: rgb(208, 248, 208);
+    text-align: center;
+}

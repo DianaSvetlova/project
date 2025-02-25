@@ -1,0 +1,29 @@
+article {
+    
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+
+    
+}
+
+article>div {
+    background-color:  rgb(208, 248, 208);
+    margin: 1px; 
+}
+
+.user {
+    display: flex;
+    flex-direction: row;    
+
+}
+
+.user>div {
+    margin: 10px;
+}
+
+.text {
+    height: 100px;
+    overflow: hidden;
+}
+
