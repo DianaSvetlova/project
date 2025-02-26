@@ -1,5 +1,5 @@
 .header__feed-link:link {
-    color: rgb(2, 82, 39);
+    color: rgb(184, 36, 195);
 }
 
 .header__feed-link:active {
@@ -11,7 +11,7 @@
 }
 
 .header__new-link:link {
-    color: rgb(2, 82, 39);
+    color: rgb(184, 36, 195);
 }
 
 .header__new-link:active {
@@ -31,7 +31,7 @@
 }
 
 .footer__admin-link:link {
-    color: rgb(2, 82, 39);
+    color: rgb(184, 36, 195);
 }
 
 .footer__admin-link:active {
@@ -47,7 +47,7 @@
 }
 
 .article__more__link:link {
-    color: rgb(2, 82, 39);
+    color: rgb(184, 36, 195);
 }
 
 .article__more__link:active {
