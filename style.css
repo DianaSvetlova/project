@@ -14,6 +14,7 @@ article>div {
     text-align:right;
     height: 20px;
     border: 1px solid rgb(224, 71, 224);
+    padding-right: 5px;
 }
 
 .article__title {
@@ -21,6 +22,7 @@ article>div {
     overflow: hidden;
     height: 20px;
     border: 1px solid rgb(224, 71, 224);
+    padding-right: 5px;
 }
 
 .article__post {
@@ -65,5 +67,6 @@ article>div {
     text-align:right;
     height: 20px;
     border: 1px solid rgb(224, 71, 224);
+    padding-right: 5px;
 }
 
