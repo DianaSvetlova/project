@@ -3,27 +3,67 @@ article {
     display: flex;
     flex-direction: column;
     margin: 30px;
-
-    
+    gap: 2px;        
 }
 
 article>div {
     background-color:  rgb(208, 248, 208);
-    margin: 1px; 
 }
 
-.user {
+.article__date {
+    text-align:right;
+    height: 20px;
+    border: 1px solid rgb(224, 71, 224);
+}
+
+.article__title {
+    text-align:right;
+    overflow: hidden;
+    height: 20px;
+    border: 1px solid rgb(224, 71, 224);
+}
+
+.article__post {
     display: flex;
-    flex-direction: row;    
-
+    flex-direction: row; 
+    gap: 10px;  
+    border: 1px solid rgb(224, 71, 224);
 }
 
-.user>div {
+.article__post>div {
     margin: 10px;
 }
 
-.text {
+.article__post__user {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
+}
+
+.article__post__avatar {
+    width: 100px;
+    height: 100px;
+}
+
+.article__post__avatar_img {
+    height: 100px;
+    width: 100px;
+}
+
+.article__post__name {
+    width: 100px;
     height: 100px;
     overflow: hidden;
+}
+
+.article__post__text {
+    height: 200px;
+    overflow: hidden;
+}
+
+.article__more {
+    text-align:right;
+    height: 20px;
+    border: 1px solid rgb(224, 71, 224);
 }
 

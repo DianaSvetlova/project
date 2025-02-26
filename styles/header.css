@@ -1,0 +1,28 @@
+header {
+    background-color: rgb(208, 248, 208);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 35px;
+        
+}
+
+.header__logo {
+    margin: 3px;
+}
+
+.header__logo__img {
+    height: 30px;
+    width: 30px;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav>div {
+    margin: 10px;
+}
