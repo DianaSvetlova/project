@@ -4,39 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>newPost</title>
-    <link rel="stylesheet" href="./newpost.html">
+    <link rel="stylesheet" href="./newpost.css">
     <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/links.css">
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <div class="logo">
-                <img src="#" alt="vesna">                
+            <div class="header__logo">
+                <img class="header__logo__img" src="../logo1.jpg" alt="vesna">                
             </div>
             <nav>
                 <div>
-                    <a href="../index.html">Общая лента</a>
+                    <a class="header__feed-link" href="../index.html">Общая лента</a>
                 </div>
                 <div>
-                    <a href="./newpost.html">Написать новый пост</a>
+                    <a class="header__new-link" href="../newpost/newpost.html">Написать новый пост</a>
                 </div>                
             </nav>
         </header>
 
         <main>
-            new
-
+            <article>
+                <div class="article__user">
+                    <div class="article__user__avatar">
+                        <input class="article__user__avatar__img" type="file">                                                      
+                    </div>
+                    <div class="article__user__name">
+                        <input class="article__user__name__input" type="text" placeholder="имя пользователя" maxlength="100" required>                                                      
+                    </div>
+                </div> 
+                <div class="article__title">
+                    <input class="article__title__input" type="text" placeholder="заглавие поста" maxlength="100" >
+                </div>
+                <div class="article_text">
+                    <textarea name="text" id="text"></textarea>
+                </div>
+                <div class="article__buttons">
+                    <button class="article__buttons__submit">Опубликовать</button>
+                    <button class="article__buttons__del">Удалить черновик</button>
+                </div>           
+            </article> 
         </main>
 
         <footer>
             <div>
-                <a href="./admin/admin.html">Админка</a></div>
+                <a class="footer__admin-link" href="../admin/admin.html">Rule the world</a></div>
         </footer>
-    </div>
+    </div>    
 
-    
-
-    <script src="./new post.js"></script>
+    <script src="./newpost.js"></script>
 </body>
 </html>
