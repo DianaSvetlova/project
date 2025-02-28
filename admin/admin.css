@@ -1,3 +1,12 @@
+#get {
+    background-color: rgb(102, 31, 218);
+    color: azure;
+    border-radius: 5px;
+    border-color: azure;
+    font-size: 20px;
+
+}
+
 #del {
     background-color: red;
     color: azure;
