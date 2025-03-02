@@ -23,7 +23,7 @@ getBtn.onclick = () => {
 
                 delBtn.onclick = () => {
                                     
-                    fetch(`https://project-4cf4c-default-rtdb.firebaseio.com//posts/${post.id}.json`, {
+                    fetch(`https://project-4cf4c-default-rtdb.firebaseio.com/posts/${post.id}.json`, {
                         method: 'DELETE',
                         headers: {
                         'Content-Type': 'application/json'
