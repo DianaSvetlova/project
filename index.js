@@ -1,5 +1,4 @@
 const blockPosts = document.querySelector('.posts')
-// const deletePost = document.querySelector('.delete-post');
 
 window.onload = () => {
     fetch('https://project-4cf4c-default-rtdb.firebaseio.com/posts.json')
@@ -12,31 +11,46 @@ window.onload = () => {
                 }
             })
             arr.forEach(post => {
+                
                 const div = document.createElement('div')
+                const date = document.createElement('p')
+                date.innerText = new Date(post.date).toUTCString()
                 const title = document.createElement('p')
-                const userName = document.createElement('p')
-                const delBtn = document.createElement('button')
-
                 title.textContent = post.title
-                userName.textContent = post.userName
-                delBtn.textContent = 'DELETE'
+                const userName = document.createElement('p')
+                userName.textContent = post.userName 
+                const text = document.createElement('div') 
+                text.textContent = post.text  
+                const btnReadMore = document.createElement ('button')
+                btnReadMore.textContent = "читать дальше"  
 
-                delBtn.onclick = () => {                    
-                                    
-                    fetch(`https://project-4cf4c-default-rtdb.firebaseio.com/posts/${post.id}.json`, {
-                        method: 'DELETE',
-                        headers: {
-                        'Content-Type': 'application/json'
-                        },        
-                        
-                    })
-                        .then (data => data.json())                           
-                        .then (div.style.display = 'none')                                
-                        .catch (error => console.error('Error:', error))
-                        
-                }                
+                btnReadMore.onclick = () => {
+                    const postId = 
+                    fetch('https://project-4cf4c-default-rtdb.firebaseio.com/posts/${id}.json') // как достать нужный Id
+                    .then (response => response.json())
+                    .then (data => console.log(data))
 
-                div.append(title, userName,delBtn)
+
+
+                    
+                    // const post = {
+                    //     date: date.value,
+                    //     title: title.value,
+                    //     userName: userName.value,                        
+                    //     text: text.value,                        
+                    // }
+                    // console.log(post);
+                    
+                    localStorage.setItem('fullPostId', JSON.stringify(postId))
+
+
+                    // window.location.href='./fullpost/fullpost.html'
+
+                }
+
+
+
+                div.append(date, title, userName, text, btnReadMore)
                 blockPosts.appendChild(div)
 
             })           
