@@ -1,7 +1,7 @@
-const getBtn = document.querySelector('#get')
 const blockPosts = document.querySelector('.posts')
+const deletePost = document.querySelector('.delete-post');
 
-getBtn.onclick = () => {
+window.onload = () => {
     fetch('https://project-4cf4c-default-rtdb.firebaseio.com/posts.json')
         .then (response => response.json())
         .then (data => {
@@ -21,7 +21,7 @@ getBtn.onclick = () => {
                 userName.textContent = post.userName
                 delBtn.textContent = 'DELETE'
 
-                delBtn.onclick = () => {
+                delBtn.onclick = () => {                    
                                     
                     fetch(`https://project-4cf4c-default-rtdb.firebaseio.com/posts/${post.id}.json`, {
                         method: 'DELETE',
@@ -30,9 +30,11 @@ getBtn.onclick = () => {
                         },        
                         
                     })
-                        .then (data => data.json())                        
+                        .then (data => data.json())                           
+                        .then (div.style.display = 'none')                                
                         .catch (error => console.error('Error:', error))
-                }
+                        
+                }                
 
                 div.append(title, userName,delBtn)
                 blockPosts.appendChild(div)
