@@ -1,5 +1,5 @@
 const blockPosts = document.querySelector('.posts')
-const deletePost = document.querySelector('.delete-post');
+// const deletePost = document.querySelector('.delete-post');
 
 window.onload = () => {
     fetch('https://project-4cf4c-default-rtdb.firebaseio.com/posts.json')
