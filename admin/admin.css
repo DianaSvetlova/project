@@ -1,21 +1,3 @@
-#get {
-    background-color: rgb(102, 31, 218);
-    color: azure;
-    border-radius: 5px;
-    border-color: azure;
-    font-size: 20px;
-
-}
-
-#del {
-    background-color: red;
-    color: azure;
-    border-radius: 5px;
-    border-color: azure;
-    font-size: 20px;
-
-}
-
 .posts {
     /* border: 1px solid black; */
    
@@ -36,6 +18,9 @@
 p {
     border: 1px solid black;
     margin: 10px;
+    padding: 5px;
 }
 
-
+.delBtn {
+    margin: 10px;
+}

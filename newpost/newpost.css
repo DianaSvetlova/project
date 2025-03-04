@@ -11,7 +11,8 @@ article>div {
 
 .article__user__name__input {
     background-color: rgb(208, 248, 208);
-    margin: 10px;   
+    margin: 10px; 
+    width: 20%;  
 }
 
 .article__title {
