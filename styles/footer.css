@@ -2,3 +2,8 @@ footer {
     background-color: rgb(208, 248, 208);
     text-align: center;
 }
+
+.footer__creator {
+    color: rgb(7, 44, 17);
+    margin: 5px;
+}

@@ -20,6 +20,7 @@ window.onload = () => {
                 title.textContent = post.title
                 userName.textContent = post.userName
                 delBtn.textContent = 'DELETE'
+                delBtn.classList.add('delBtn')
 
                 delBtn.onclick = () => {                    
                                     

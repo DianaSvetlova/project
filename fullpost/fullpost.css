@@ -14,14 +14,16 @@ article>div {
     height: 20px;
     border: 1px solid rgb(224, 71, 224);
     padding-right: 5px;
+    background-color:  rgb(208, 248, 208);
 }
 
 .article__title {
     text-align:right;
-    overflow:auto;
-    height: 65px;
+    overflow: hidden;
+    height: 20px;
     border: 1px solid rgb(224, 71, 224);
     padding-right: 5px;
+    background-color:  rgb(208, 248, 208);
 }
 
 .article__post {
@@ -52,9 +54,24 @@ article>div {
 }
 
 .article__post__name {
-    width: 100px;
+    /* width: 100px;
     height: 100px;
+    overflow: hidden; */
+    text-align:right;
     overflow: hidden;
+    height: 20px;
+    border: 1px solid rgb(224, 71, 224);
+    padding-right: 5px;
+    background-color:  rgb(208, 248, 208);
+}
+
+.article__post__text {
+    /* height: 200px;
+    overflow: hidden; */
+    border: 1px solid rgb(224, 71, 224);
+    padding-right: 5px;
+    background-color:  rgb(208, 248, 208);
+    padding: 10px;
 }
 
 .article__like {
@@ -62,6 +79,11 @@ article>div {
     height: 65px;
     border: 1px solid rgb(224, 71, 224);
     padding-right: 5px;
+}
+
+.article__like__count {
+    font-size: 50px;
+    color: rgb(208, 248, 208);;
 }
 
 .article__like__button {
@@ -74,3 +96,20 @@ article>div {
     margin-top: 5px;
 }
 
+.article__like__button__img__change {    
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .article__title {
+        overflow: hidden;       
+    }
+
+    .article__post__avatar_img {
+        display: none;
+    }
+    
+}
