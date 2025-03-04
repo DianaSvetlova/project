@@ -2,6 +2,7 @@ const userName = document.querySelector('.article__user__name__input')
 const title = document.querySelector('.article__title__input')
 const text = document.getElementById('text')
 const btnSubmit = document.querySelector('.article__buttons__submit')
+const btnReset = document.querySelector('.article__buttons__del')
 
 btnSubmit.onclick = () => {
     const post = {
@@ -27,3 +28,8 @@ btnSubmit.onclick = () => {
     .catch(err =>  console.log(err))
 }
 
+btnReset.onclick = () => {
+    userName.value = ''
+        title.value = ''
+        text.value = ''    
+}
