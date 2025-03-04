@@ -12,17 +12,28 @@ window.onload = () => {
             })
             arr.forEach(post => {
                 
-                const div = document.createElement('div')
-                const date = document.createElement('p')
+                const article = document.createElement('div')
+                article.classList.add('article')
+                const avatar = document.createElement('img')
+                avatar.src="./ava3.webp"
+                avatar.classList.add('article__post__avatar_img')
+                const date = document.createElement('div')                
                 date.innerText = new Date(post.date).toUTCString()
-                const title = document.createElement('p')
+                date.classList.add('article__date')
+                const title = document.createElement('div')
                 title.textContent = post.title
-                const userName = document.createElement('p')
+                title.classList.add('article__title') 
+
+                const userName = document.createElement('div')
                 userName.textContent = post.userName 
+                userName.classList.add('article__post__name') 
+                
                 const text = document.createElement('div') 
                 text.textContent = post.text  
+                text.classList.add('article__post__text')
                 const btnReadMore = document.createElement ('button')
-                btnReadMore.textContent = "читать дальше"  
+                btnReadMore.textContent = "читать дальше" 
+                btnReadMore.classList.add('button') 
 
                 btnReadMore.onclick = () => {
                     const postId = 
@@ -49,9 +60,9 @@ window.onload = () => {
                 }
 
 
-
-                div.append(date, title, userName, text, btnReadMore)
-                blockPosts.appendChild(div)
+                
+                article.append(avatar, date, title, userName, text, btnReadMore)
+                blockPosts.appendChild(article)
 
             })           
         })

@@ -3,18 +3,22 @@ article {
     display: flex;
     flex-direction: column;
     margin: 30px;
-    gap: 2px;        
+    gap: 20px; 
+    border: 1px solid rgb(224, 71, 224); 
+  
 }
 
-article>div {
+/* article>div {
     background-color:  rgb(208, 248, 208);
-}
+} */
 
 .article__date {
     text-align:right;
     height: 20px;
     border: 1px solid rgb(224, 71, 224);
     padding-right: 5px;
+    background-color:  rgb(208, 248, 208);
+    
 }
 
 .article__title {
@@ -23,6 +27,7 @@ article>div {
     height: 20px;
     border: 1px solid rgb(224, 71, 224);
     padding-right: 5px;
+    background-color:  rgb(208, 248, 208);
 }
 
 .article__post {
@@ -30,37 +35,50 @@ article>div {
     flex-direction: row; 
     gap: 10px;  
     border: 1px solid rgb(224, 71, 224);
+    background-color:  rgb(208, 248, 208);
 }
 
-.article__post>div {
+/* .article__post>div {
     margin: 10px;
-}
+} */
 
 .article__post__user {
     display: flex;
     flex-direction: column;
-    gap: 10px;    
+    gap: 10px;  
+    margin: 10px;  
 }
 
-.article__post__avatar {
+/* .article__post__avatar {
     width: 100px;
     height: 100px;
-}
+    margin: 10px;
+} */
 
 .article__post__avatar_img {
     height: 100px;
     width: 100px;
+    margin-top: 30px;
 }
 
 .article__post__name {
-    width: 100px;
+    /* width: 100px;
     height: 100px;
+    overflow: hidden; */
+    text-align:right;
     overflow: hidden;
+    height: 20px;
+    border: 1px solid rgb(224, 71, 224);
+    padding-right: 5px;
+    background-color:  rgb(208, 248, 208);
 }
 
 .article__post__text {
     height: 200px;
     overflow: hidden;
+    border: 1px solid rgb(224, 71, 224);
+    padding-right: 5px;
+    background-color:  rgb(208, 248, 208);
 }
 
 .article__more {
@@ -68,6 +86,14 @@ article>div {
     height: 20px;
     border: 1px solid rgb(224, 71, 224);
     padding-right: 5px;
+}
+
+button {
+    background-color: rgb(208, 248, 208);
+    color: rgb(226, 49, 226);
+    border-radius: 5%;
+    margin: 5px;
+    
 }
 
 
