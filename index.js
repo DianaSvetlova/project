@@ -31,7 +31,7 @@ window.onload = () => {
                 text.classList.add('article__post__text')
                 const btnReadMore = document.createElement ('button')
                 btnReadMore.textContent = "читать дальше" 
-                btnReadMore.classList.add('button') 
+                btnReadMore.classList.add('btn-Read-More') 
 
                 btnReadMore.onclick = () => {       
                     

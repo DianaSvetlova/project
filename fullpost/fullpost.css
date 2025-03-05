@@ -59,7 +59,8 @@ article {
 
 .article__like__count {
     font-size: 50px;
-    color: rgb(208, 248, 208);;
+    color: rgb(208, 248, 208);
+    font-family: Futura
 }
 
 .article__like__button {
@@ -75,7 +76,7 @@ article {
 .article__like__button__img__change {    
     width: 40px;
     height: 40px;
-    margin-top: 5px;
+    margin-top: 5px;    
 }
 
 @media screen and (max-width: 500px) {

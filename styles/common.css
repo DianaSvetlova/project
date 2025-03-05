@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(236, 177, 236);
+    background-color: rgb(236, 177, 236); 
 }
 
 .wrapper {    
@@ -12,7 +12,7 @@ body {
 
 main {
     margin: 10px 100px;
+    font-family: Futura;
 }
-
 
 

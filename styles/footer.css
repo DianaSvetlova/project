@@ -6,4 +6,10 @@ footer {
 .footer__creator {
     color: rgb(7, 44, 17);
     margin: 5px;
+    font-family: clarendon;
+}
+
+.footer__admin-link {    
+    font-family: SweetMavka;
+    font-size: 20px;    
 }
