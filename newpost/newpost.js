@@ -1,20 +1,19 @@
-const userName = document.querySelector('.article__user__name__input')
+const userName = document.querySelector('.article__user__name__input')  //получаем нужные элементы из html
 const title = document.querySelector('.article__title__input')
 const text = document.getElementById('text')
 const btnSubmit = document.querySelector('.article__buttons__submit')
 const btnReset = document.querySelector('.article__buttons__del')
 
-btnSubmit.onclick = () => {
+btnSubmit.onclick = () => {         //по кнопке "отправить" создаём объект из данных, введённых в поля вручную 
     const post = {
         userName: userName.value,
         title: title.value,
         text: text.value,
         date: new Date(),
     }
-    console.log(post);    
-    
+    console.log(post);  
 
-    fetch(`https://project-4cf4c-default-rtdb.firebaseio.com/posts.json`, {
+    fetch(`https://project-4cf4c-default-rtdb.firebaseio.com/posts.json`, {    //отправляем полученные на данный на firebase
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -28,7 +27,7 @@ btnSubmit.onclick = () => {
     .catch(err =>  console.log(err))
 }
 
-btnReset.onclick = () => {
+btnReset.onclick = () => {      //по кнопке "удалить черновик" удаляем введённые, но неотправленные данные
     userName.value = ''
         title.value = ''
         text.value = ''    

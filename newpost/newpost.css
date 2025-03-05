@@ -16,12 +16,11 @@ article>div {
 }
 
 .article__title {
-    border: 1px solid rgb(224, 71, 224);
     padding-right: 5px;
 }
 
 .article__title__input {
-    width: 90%;
+    width: 70%;
     margin: 10px;  
     background-color: rgb(208, 248, 208);
 }
@@ -40,16 +39,28 @@ article>div {
 
 .article__buttons__submit {
     background-color: rgb(236, 177, 236);
-    color: rgb(208, 248, 208);
+    color: rgb(0, 0, 0);
     border-radius: 5%;
     margin: 10px;
 }
 
 .article__buttons__del {
     background-color: rgb(236, 177, 236);
-    color: rgb(208, 248, 208);
+    color: rgb(0, 0, 0);
     border-radius: 5%;
     margin: 10px;
 }
 
+@media screen and (max-width: 600px) {
+    article {
+        margin: 10px;
+    }
 
+    #text {
+        width: 80%;       
+    }
+
+    .article__buttons {
+        height: 100px;
+    } 
+}

@@ -14,7 +14,6 @@ header {
 .header__logo__img {
     height: 30px;
     width: 30px;
-
 }
 
 nav {
@@ -25,4 +24,10 @@ nav {
 
 nav>div {
     margin: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        height: 70px;
+    }  
 }

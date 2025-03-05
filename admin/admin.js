@@ -1,7 +1,6 @@
-const blockPosts = document.querySelector('.posts')
-// const deletePost = document.querySelector('.delete-post');
+const blockPosts = document.querySelector('.posts') //получаем нужные элементы из html
 
-window.onload = () => {
+window.onload = () => {     //по загрузке окна получаем с firebase все посты
     fetch('https://project-4cf4c-default-rtdb.firebaseio.com/posts.json')
         .then (response => response.json())
         .then (data => {
@@ -11,18 +10,17 @@ window.onload = () => {
                     id: Object.keys(data)[i],
                 }
             })
-            arr.forEach(post => {
+            arr.forEach(post => {       //обрабатываем необходимые поля из полученных объектов
                 const div = document.createElement('div')
                 const title = document.createElement('p')
-                const userName = document.createElement('p')
-                const delBtn = document.createElement('button')
-
                 title.textContent = post.title
+                const userName = document.createElement('p')
                 userName.textContent = post.userName
-                delBtn.textContent = 'DELETE'
+                const delBtn = document.createElement('button') 
+                delBtn.textContent = 'УДАЛИТЬ ПОСТ'
                 delBtn.classList.add('delBtn')
 
-                delBtn.onclick = () => {                    
+                delBtn.onclick = () => {       //по кнопке 'УДАЛИТЬ ПОСТ' удаляется пост из firebase             
                                     
                     fetch(`https://project-4cf4c-default-rtdb.firebaseio.com/posts/${post.id}.json`, {
                         method: 'DELETE',
@@ -32,7 +30,7 @@ window.onload = () => {
                         
                     })
                         .then (data => data.json())                           
-                        .then (div.style.display = 'none')                                
+                        .then (div.style.display = 'none')     //удаляется блок с постом со страницы админки                           
                         .catch (error => console.error('Error:', error))
                         
                 }                

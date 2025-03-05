@@ -5,10 +5,6 @@ article {
     gap: 2px;        
 }
 
-article>div {
-    background-color:  rgb(208, 248, 208);
-}
-
 .article__date {
     text-align:right;
     height: 20px;
@@ -33,30 +29,12 @@ article>div {
     border: 1px solid rgb(224, 71, 224);
 }
 
-.article__post>div {
-    margin: 10px;
-}
-
-.article__post__user {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;    
-}
-
-.article__post__avatar {
-    width: 100px;
-    height: 100px;
-}
-
 .article__post__avatar_img {
     height: 100px;
     width: 100px;
 }
 
 .article__post__name {
-    /* width: 100px;
-    height: 100px;
-    overflow: hidden; */
     text-align:right;
     overflow: hidden;
     height: 20px;
@@ -66,8 +44,6 @@ article>div {
 }
 
 .article__post__text {
-    /* height: 200px;
-    overflow: hidden; */
     border: 1px solid rgb(224, 71, 224);
     padding-right: 5px;
     background-color:  rgb(208, 248, 208);
@@ -104,6 +80,10 @@ article>div {
 
 @media screen and (max-width: 500px) {
 
+    .article__date {
+        overflow: hidden;       
+    }
+
     .article__title {
         overflow: hidden;       
     }
@@ -111,5 +91,5 @@ article>div {
     .article__post__avatar_img {
         display: none;
     }
-    
+
 }
