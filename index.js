@@ -1,4 +1,5 @@
 const blockPosts = document.querySelector('.posts') //получаем нужные элементы из html
+const imgLogo = document.querySelector('.header__logo__img')
 
 window.onload = () => {
     fetch('https://project-4cf4c-default-rtdb.firebaseio.com/posts.json') //по загрузке окна получаем все посты из firebase
@@ -21,6 +22,7 @@ window.onload = () => {
                 title.textContent = post.title
                 title.classList.add('article__title') 
                 const avatar = document.createElement('img')
+                avatar.alt = 'аватарка'                                 //альтернативный текст, когда нет картинки
                 avatar.src="./ava3.webp"                                //статичная картинка
                 avatar.classList.add('article__post__avatar_img')
                 const userName = document.createElement('div')
@@ -55,7 +57,9 @@ window.onload = () => {
         .catch (error => console.error('Error:', error))
 }
 
-
+imgLogo.onclick = () => { 
+    window.location.href='./index.html' //перенаправление на главную
+}
 
 
 

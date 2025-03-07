@@ -16,7 +16,8 @@ function getFullPost () {   //получаем по id пост целиком �
             const article = document.createElement('div')
             article.classList.add('article')
             const avatar = document.createElement('img')
-            avatar.src="../ava3.webp"
+            avatar.src="../ava3.webp"                               //статичная картинка
+            avatar.alt = 'аватарка'                                 //альтернативный текст, когда нет картинки
             avatar.classList.add('article__post__avatar_img')
             const date = document.createElement('div')                
             date.innerText = new Date(post.date).toLocaleString()
