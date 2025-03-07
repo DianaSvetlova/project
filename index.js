@@ -11,6 +11,7 @@ window.onload = () => {
                     id: Object.keys(data)[i],
                 }
             })
+            
             arr.forEach(post => {
                 
                 const article = document.createElement('div')   //обрабатываем каждый полученный объект в читаемый пост
